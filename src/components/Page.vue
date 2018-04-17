@@ -3,7 +3,7 @@
     <header-template></header-template>
     <div class="main">
       <sidebar></sidebar>
-      <content-body></content-body>
+      <content-body :main="main"></content-body>
     </div>
   </div>
 </template>
@@ -11,7 +11,7 @@
 <script>
 import Sidebar from './Sidebar'
 import HeaderTemplate from './Header'
-import ContentBody from './Content'
+import ContentBody from './PageContent/ContentBody'
 
 export default {
   name: 'Page',
@@ -24,6 +24,9 @@ export default {
     Sidebar,
     HeaderTemplate,
     ContentBody
+  },
+  created () {
+    this.$root.$on('mainMenu', value => { this.main = value })
   }
 }
 </script>

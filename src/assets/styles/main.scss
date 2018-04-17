@@ -16,11 +16,18 @@ html {
   position: fixed;
   top:0;
   width:100%;
-  border-bottom:1px solid black;
-  padding: 10px 60px;
+  box-shadow: 0 0 1px rgba(0,0,0,0.25);
+  padding: 8px 60px;
+  z-index: 1;
+  background-color: #fff;
   img {
     height: 40px;
     width: 40px;
+  }
+  span {
+    font-size: 1.5rem;
+    position: absolute;
+    margin: 4px 12px;
   }
 }
 
@@ -30,18 +37,19 @@ html {
 
 .sidebar__wrapper {
   left:0;
-  border-right: 1px solid red;
   top: 61px;
   position: fixed;
   width:260px;
   padding: 40px 20px 60px 60px;
+  overflow-y: scroll;
+  height: 83%;
 }
 
-.content__body {
+.content__body__wrapper {
   top:61px;
   position: relative;
   padding: 2.2em 0;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
   padding-left: 50px;
   p {
@@ -50,7 +58,7 @@ html {
 }
 
 @media ( max-width: 1300px ) {
-  .content__body{
+  .content__body__wrapper{
     margin-left: 290px;
   }
 }
@@ -58,9 +66,27 @@ html {
 
 @media ( max-width: 900px ) {
   .sidebar__wrapper{
-    display: none;
+    left: -341px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
-  .content__body{
+  .content__body__wrapper{
     margin: 0 auto;
   }
+}
+
+ul, li {
+  list-style: none;
+  line-height: 2rem;
+}
+
+ul {
+  padding-left: 20px;
+}
+li {
+  font-weight: 600;
+}
+.submenu {
+  font-size: 0.85rem;
+  font-weight: 400;
 }

@@ -1,23 +1,33 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Page from '@/components/Page'
-import Content from '@/components/Content'
+import Contents from '@/views/Contents'
 import Header from '@/components/Header'
 import Sidebar from '@/components/Sidebar'
 
 Vue.use(Router)
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
       name: 'Page',
-      component: Page
-    },
-    {
-      path: '/content',
-      name: 'Content',
-      component: Content
+      component: Page,
+      children: [
+        {
+          path: '/contents',
+          name: 'Contents',
+          redirect: {name: 'Quill'},
+          children: [
+            {
+              path: '/contents/quill',
+              name: 'Quill',
+              component: Contents
+            }
+          ]
+        }
+      ]
     },
     {
       path: '/header',
