@@ -16,13 +16,12 @@ export default {
   },
   data () {
     return {
-      currentView: Quill
+      currentView: ''
     }
   },
   created () {
-    console.log(Quill)
     this.$root.$on('selectMenu', value => {
-      this.currentView = Quill
+      this.currentView = value.component
     })
   }
 }

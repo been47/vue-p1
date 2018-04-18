@@ -16,12 +16,12 @@ export default {
   },
   data () {
     return {
-      currentView: Da
+      currentView: ''
     }
   },
   created () {
     this.$root.$on('selectMenu', value => {
-      this.currentView = Da
+      this.currentView = value.component
     })
   }
 }
