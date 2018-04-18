@@ -2,8 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Page from '@/components/Page'
 import Contents from '@/views/Contents'
+import C from '@/views/C'
+import D from '@/views/D'
+import E from '@/views/E'
 import Header from '@/components/Header'
-import Sidebar from '@/components/Sidebar'
 
 Vue.use(Router)
 
@@ -26,6 +28,42 @@ export default new Router({
               component: Contents
             }
           ]
+        },
+        {
+          path: '/c',
+          name: 'C',
+          redirect: {name: 'Ca'},
+          children: [
+            {
+              path: '/c/ca',
+              name: 'Ca',
+              component: C
+            }
+          ]
+        },
+        {
+          path: '/d',
+          name: 'D',
+          redirect: {name: 'Da'},
+          children: [
+            {
+              path: '/d/da',
+              name: 'Da',
+              component: D
+            }
+          ]
+        },
+        {
+          path: '/e',
+          name: 'E',
+          redirect: {name: 'Ea'},
+          children: [
+            {
+              path: '/e/ea',
+              name: 'Ea',
+              component: E
+            }
+          ]
         }
       ]
     },
@@ -33,11 +71,6 @@ export default new Router({
       path: '/header',
       name: 'Header',
       component: Header
-    },
-    {
-      path: '/sidebar',
-      name: 'Sidebar',
-      component: Sidebar
     }
   ]
 })

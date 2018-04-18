@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Sidebar from './Sidebar'
+import Sidebar from './Sidebar/Sidebar'
 import HeaderTemplate from './Header'
 import ContentBody from './PageContent/ContentBody'
 

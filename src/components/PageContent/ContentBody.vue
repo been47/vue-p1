@@ -7,6 +7,9 @@
 
 <script>
 import Contents from '../../views/Contents'
+import C from '../../views/C'
+import D from '../../views/D'
+import E from '../../views/E'
 export default {
   name: 'ContentBody',
   props: ['main'],
@@ -16,11 +19,15 @@ export default {
     }
   },
   components: {
-    Contents
+    Contents,
+    C,
+    D,
+    E
   },
   methods: {
     getComponent () {
       const returnValue = this.$router.currentRoute.path.split('/')[1]
+      console.log(returnValue)
       return returnValue
     }
   },

@@ -1,7 +1,9 @@
 <template>
   <div class="header__wrapper">
-    <img src="../assets/images/logo.png">
-    <span>Header</span>
+    <a class="header__logo" href="/">
+      <img src="../assets/images/logo.png">
+      <span>Header</span>
+    </a>
   </div>
 </template>
 

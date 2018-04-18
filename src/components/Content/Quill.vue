@@ -15,11 +15,10 @@ export default {
   name: 'Quill',
   data () {
     return {
-      content: '<h1>Html For Editor</h1>',
+      content: '',
       customToolbar: [
-        ['bold', 'italic', 'underline'],
-        [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-        ['image', 'code-block']
+        ['bold', 'italic', 'underline', 'strike', {'list': 'ordered'}, {'list': 'bullet'}, 'image', 'code-block',
+          'video', 'background', 'bold', 'font', 'code', 'link', 'align', 'formula']
       ]
     }
   },

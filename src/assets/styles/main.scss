@@ -20,14 +20,19 @@ html {
   padding: 8px 60px;
   z-index: 1;
   background-color: #fff;
-  img {
-    height: 40px;
-    width: 40px;
-  }
-  span {
-    font-size: 1.5rem;
-    position: absolute;
-    margin: 4px 12px;
+  .header__logo{
+    &:focus, &:visited{
+      color: inherit;
+    }
+    img {
+      height: 40px;
+      width: 40px;
+    }
+    span {
+      font-size: 1.5rem;
+      position: absolute;
+      margin: 4px 12px;
+    }
   }
 }
 
@@ -89,4 +94,12 @@ li {
 .submenu {
   font-size: 0.85rem;
   font-weight: 400;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.mainmenu {
+  &:hover {
+    cursor: pointer;
+  }
 }
