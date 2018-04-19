@@ -9,10 +9,12 @@
 
 <script>
 import Quill from '../components/Content/Quill'
+import Mdata from '../components/Content/Mdata'
 export default {
   name: 'Content',
   components: {
-    Quill
+    Quill,
+    Mdata
   },
   data () {
     return {

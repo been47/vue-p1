@@ -26,6 +26,11 @@ export default new Router({
               path: '/contents/quill',
               name: 'Quill',
               component: Contents
+            },
+            {
+              path: '/contents/mdata',
+              name: 'Mdata',
+              component: Contents
             }
           ]
         },

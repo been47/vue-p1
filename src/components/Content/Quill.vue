@@ -1,9 +1,7 @@
 <template>
   <div class="content__box">
     <p>ㅁㅁㅁ</p>
-    <div id="app">
-      <vue-editor v-model="content" :editorToolbar="customToolbar"></vue-editor>
-    </div>
+    <vue-editor v-model="content" :editorToolbar="customToolbar"></vue-editor>
   </div>
 </template>
 
@@ -31,8 +29,7 @@ export default {
       this.$root.$emit('mainMenu', routeName)
     }
   },
-  computed: {
-  },
+  computed: {},
   created () {
     this.setMainMenu()
   }

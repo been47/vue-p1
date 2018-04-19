@@ -8,7 +8,7 @@ export const MAIN_MENU = [
 export const SECOND_MENU = {
   CONTENTS: [
     {name: 'quill', url: '/contents/quill', component: 'quill'},
-    {name: 'ab', url: '/contents/ab', component: 'ab'},
+    {name: 'mdata', url: '/contents/mdata', component: 'mdata'},
     {name: 'ac', url: '/contents/ac', component: 'ac'},
     {name: 'ad', url: '/contents/ad', component: 'ad'},
     {name: 'ae', url: '/contents/ae', component: 'ae'},
@@ -48,3 +48,7 @@ export const SECOND_MENU = {
     {name: 'eg', url: '/e/ef', component: 'eg'}
   ]
 }
+
+export const INPUT_DATA = [
+  {name: 'first'}
+]
