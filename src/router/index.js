@@ -31,6 +31,11 @@ export default new Router({
               path: '/contents/mdata',
               name: 'Mdata',
               component: Contents
+            },
+            {
+              path: '/contents/vuetable',
+              name: 'Vuetable',
+              component: Contents
             }
           ]
         },

@@ -9,7 +9,7 @@ export const SECOND_MENU = {
   CONTENTS: [
     {name: 'quill', url: '/contents/quill', component: 'quill'},
     {name: 'mdata', url: '/contents/mdata', component: 'mdata'},
-    {name: 'ac', url: '/contents/ac', component: 'ac'},
+    {name: 'vuetable', url: '/contents/vuetable', component: 'vuetable'},
     {name: 'ad', url: '/contents/ad', component: 'ad'},
     {name: 'ae', url: '/contents/ae', component: 'ae'},
     {name: 'af', url: '/contents/af', component: 'af'},

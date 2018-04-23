@@ -10,11 +10,13 @@
 <script>
 import Quill from '../components/Content/Quill'
 import Mdata from '../components/Content/Mdata'
+import Vuetable from '../components/Content/Vuetable'
 export default {
   name: 'Content',
   components: {
     Quill,
-    Mdata
+    Mdata,
+    Vuetable
   },
   data () {
     return {
