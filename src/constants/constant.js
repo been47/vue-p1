@@ -10,6 +10,7 @@ export const SECOND_MENU = {
     {name: 'quill', url: '/contents/quill', component: 'quill'},
     {name: 'mdata', url: '/contents/mdata', component: 'mdata'},
     {name: 'navigator', url: '/contents/navigator', component: 'navigator'},
+    {name: 'vuetable', url: '/contents/vuetable', component: 'vuetable'},
     {name: 'ad', url: '/contents/ad', component: 'ad'},
     {name: 'ae', url: '/contents/ae', component: 'ae'},
     {name: 'af', url: '/contents/af', component: 'af'},
