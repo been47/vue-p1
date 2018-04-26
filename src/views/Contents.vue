@@ -10,11 +10,13 @@
 <script>
 import Quill from '../components/Content/Quill'
 import Mdata from '../components/Content/Mdata'
+import Navigator from '../components/Content/Navigator.vue'
 export default {
   name: 'Content',
   components: {
     Quill,
-    Mdata
+    Mdata,
+    Navigator
   },
   data () {
     return {
