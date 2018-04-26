@@ -2,8 +2,8 @@
   <div class="sidebar__content__menu">
     <ul>
       <li v-for="(item, index) in menu"
-          :key="index" :class="{'selected': item === selected}" @click="setSelectMenu(item)">
-        <a class="submenu">{{item.name}}</a>
+          :key="index" :class="{'selected': item === selected}">
+        <a class="submenu" @click="setSelectMenu(item)">{{item.name}}</a>
       </li>
     </ul>
   </div>
