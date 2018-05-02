@@ -15,8 +15,10 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
+    "chart.js": "^2.7.2",
     "qs": "^6.5.1",
     "vue": "^2.5.2",
+    "vue-chartjs": "^3.3.1",
     "vue-quill-editor": "^3.0.6",
     "vue-router": "^3.0.1",
     "vue-tables-2": "^1.4.31",

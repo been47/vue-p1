@@ -12,13 +12,15 @@ import Quill from '../components/Content/Quill'
 import Mdata from '../components/Content/Mdata'
 import Navigator from '../components/Content/Navigator.vue'
 import Vuetable from '../components/Content/Vuetable'
+import Chart from '../components/Content/Chart'
 export default {
   name: 'Content',
   components: {
     Quill,
     Mdata,
     Navigator,
-    Vuetable
+    Vuetable,
+    Chart
   },
   data () {
     return {

@@ -41,6 +41,11 @@ export default new Router({
               path: '/contents/vuetable',
               name: 'Vuetable',
               component: Contents
+            },
+            {
+              path: '/contents/chart',
+              name: 'Chart',
+              component: Contents
             }
           ]
         },
